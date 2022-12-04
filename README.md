@@ -1,11 +1,17 @@
 # Coddy Theme
 Colorful Sublime Text color scheme and it's totally free
 ### Javascript
+Rainbow
 ![Rainbow JS](images/rainbow-js.png)
+
+Default
 ![Default JS](images/default-js.png)
 
 ### PHP
+Rainbow
 ![Rainbow PHP](images/rainbow-php.png)
+
+Default
 ![Default PHP](images/default-php.png)
 
 ## Installation
