@@ -20,4 +20,4 @@ This theme not available in Package Control yet, so I recommend you to manually 
 git clone https://github.com/codetickdev/coddy.git
 ```
 ## Love it?
-That's good! You can follow me on Twitter [@codetickdev](http://twitter.com/codetickdev) - let's connect.
+We are on the same vibe then! You can follow me on Twitter [@codetickdev](http://twitter.com/codetickdev) - let's connect.
