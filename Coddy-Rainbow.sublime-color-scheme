@@ -1,0 +1,290 @@
+{
+    "name": "Coddy - Rainbow",
+    "author": "CodeTick, Elva Hadi Prajatama",
+    "variables":
+    {
+        "orange": "#FFA488",
+        "pink": "#FF85B8",
+        "blue": "#8AE1FA",
+        "blue2": "#76d0ec",
+        "yellow": "#F3F99D",
+        "white": "#EEFFFF",
+        "gray": "#B7C5D370",
+        "lightgreen": "#98fb98",
+        "dark": "#242530",
+        "purple": "#c9a9f9",
+    },
+    "globals":
+    {
+        "foreground": "var(white)",
+        "background": "var(dark)",
+        "accent": "var(gray)",
+        "caret": "var(gray)",
+        "line_highlight": "var(gray)",
+        "selection": "var(gray)",
+        "selection_border": "var(gray)",
+        "inactive_selection": "var(white)",
+        "misspelling": "var(pink)",
+        "shadow": "color(var(dark) alpha(0.25))",
+        "active_guide": "var(blue2)",
+        "stack_guide": "color(var(blue) alpha(0.5))",
+        "highlight": "var(blue)",
+        "find_highlight_foreground": "var(dark)",
+        "find_highlight": "var(yellow)",
+        "brackets_options": "underline",
+        "brackets_foreground": "var(blue)",
+        "bracket_contents_options": "underline",
+        "bracket_contents_foreground": "var(blue)",
+        "tags_options": "stippled_underline",
+        "tags_foreground": "var(pink)"
+    },
+    "rules":
+    [
+        {
+            "name": "Comment",
+            "scope": "comment, punctuation.definition.comment",
+            "foreground": "var(gray)"
+        },
+        {
+            "name": "Punctuation",
+            "scope": "punctuation.definition - punctuation.definition.numeric.base",
+            "foreground": "var(blue2)"
+        },
+        {
+            "name": "Foreground",
+            "scope": "keyword.operator.class, source.php.embedded.line, meta.method punctuation.definition, meta.method punctuation.separator",
+            "foreground": "var(white)"
+        },
+        {
+            "name": "Variable, String Link, Regular Expression, Tag Name",
+            "scope": "variable, support.other.variable, variable.parameter, string.other.link, string.regexp, declaration.tag, meta.expression.body.function, variable.parameter, string.unquoted.label",
+            "foreground": "var(blue)",
+        },
+        {
+            "name": "Number, Constant, Function Argument, Tag Attribute, Embedded",
+            "scope": "constant.numeric, constant.language, constant.other, support.constant, variable.other.constant, keyword.other.unit, meta.property-value, punctuation.section.embedded",
+            "foreground": "var(purple)",
+        },
+        {
+            "name": "Class, Support",
+            "scope": "entity.name.class, entity.name.type.class, entity.name.type.instance, entity.name.instance, meta.instance.constructor, meta.property.class, variable.other.class, class.name, support.type, support.class, storage.type",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "String, Symbols, Inherited Class, Markup Heading",
+            "scope": "string, constant.other.symbol, entity.other.inherited-class",
+            "foreground": "var(lightgreen)"
+        },
+        {
+            "name": "Operator, Misc",
+            "scope": "keyword.operator, keyword.control, entity.other.attribute-name, constant.other.color, constant.character",
+            "foreground": "var(purple)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Function, Special Method, Block Level",
+            "scope": "entity.name.function, support.function, keyword.other.special-method, entity.name.method, meta.accessor, meta.block-level, function.name",
+            "foreground": "var(lightgreen)"
+        },
+        {
+            "name": "Keyword, Storage",
+            "scope": "keyword, storage, storage.type, entity.name.tag.css, meta.tag, entity.name.tag",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "TypeScript Functions",
+            "scope": "meta.expression.body.function",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "TypeScript Class",
+            "scope": "meta.expression.body.class.ts, meta.class.ts",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "TypeScript Variables",
+            "scope": "meta.toc-list.class.member.ts",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "TypeScript Strings",
+            "scope": "punctuation.definition.string.ts",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "TypeScript Misc., Braces, Periods, Delimiter etc.",
+            "scope": "meta.brace.curly.ts, meta.brace.square.ts, meta.brace.round.ts, meta.delimiter.ts, punctuation.definition.parameters.ts, punctuation.terminator.statement.ts, punctuation.definition.parameters.begin.ts, punctuation.definition.parameters.end.ts, meta.delimiter.method.period.ts, meta.delimiter.object.comma.ts, keyword.operator.ts",
+            "foreground": "var(blue2)"
+        },
+        {
+            "name": "JSON Key",
+            "scope": "string.quoted.double.json, meta.structure.dictionary.json string.quoted.double.json, meta.structure.dictionary.json meta.structure.dictionary.json string.quoted.double.json, meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json string.quoted.double.json, meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json string.quoted.double.json, meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json string.quoted.double.json, meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json string.quoted.double.json, meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json string.quoted.double.json, meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json string.quoted.double.json",
+            "foreground": "var(lightgreen)"
+        },
+        {
+            "name": "JSON String",
+            "scope": "meta.structure.dictionary.value.json string.quoted.double.json, meta.structure.dictionary.value.json meta.structure.dictionary.value.json string.quoted.double.json, meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json string.quoted.double.json, meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json string.quoted.double.json, meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json string.quoted.double.json, meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json string.quoted.double.json, meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json string.quoted.double.json, meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json string.quoted.double.json, meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json string.quoted.double.json, meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json string.quoted.double.json",
+            "foreground": "var(lightgreen)"
+        },
+        {
+            "name": "JavaScript String",
+            "scope": "meta.parameter.optional punctuation.definition.string.begin, meta.parameter.optional punctuation.definition.string.end",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "YAML Key",
+            "scope": "entity.name.tag.yaml",
+            "foreground": "var(blue2)"
+        },
+        {
+            "name": "YAML String",
+            "scope": "source.yaml string.unquoted",
+            "foreground": "var(white)"
+        },
+        {
+            "name": "markup headings",
+            "scope": "markup.heading",
+            "font_style": "bold"
+        },
+        {
+            "name": "markup headings",
+            "scope": "markup.heading punctuation.definition.heading",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "markup h1",
+            "scope": "markup.heading.1 punctuation.definition.heading",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "markup links",
+            "scope": "string.other.link, markup.underline.link",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "markup bold",
+            "scope": "markup.bold",
+            "font_style": "bold"
+        },
+        {
+            "name": "markup italic",
+            "scope": "markup.italic",
+            "font_style": "italic"
+        },
+        {
+            "name": "markup underline",
+            "scope": "markup.underline",
+            "font_style": "underline"
+        },
+        {
+            "name": "markup bold/italic",
+            "scope": "markup.italic markup.bold | markup.bold markup.italic",
+            "font_style": "bold italic"
+        },
+        {
+            "name": "markup bold/underline",
+            "scope": "markup.underline markup.bold | markup.bold markup.underline",
+            "font_style": "bold underline"
+        },
+        {
+            "name": "markup italic/underline",
+            "scope": "markup.underline markup.italic | markup.italic markup.underline",
+            "font_style": "italic underline"
+        },
+        {
+            "name": "markup bold/italic/underline",
+            "scope": "markup.bold markup.italic markup.underline | markup.bold markup.underline markup.italic | markup.italic markup.bold markup.underline | markup.italic markup.underline markup.bold | markup.underline markup.bold markup.italic | markup.underline markup.italic markup.bold",
+            "font_style": "bold italic underline"
+        },
+        {
+            "name": "markup hr",
+            "scope": "punctuation.definition.thematic-break",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "markup numbered list bullet",
+            "scope": "markup.list.numbered.bullet",
+            "foreground": "var(lightgreen)"
+        },
+        {
+            "name": "markup blockquote",
+            "scope": "markup.quote punctuation.definition.blockquote, markup.list punctuation.definition.list_item",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "markup code",
+            "scope": "markup.raw",
+            "background": "color(var(blue2) alpha(0.38))"
+        },
+        {
+            "name": "markup code",
+            "scope": "markup.raw.inline",
+            "background": "color(var(blue2) alpha(0.5))"
+        },
+        {
+            "name": "markup punctuation",
+            "scope": "(text punctuation.definition.italic | text punctuation.definition.bold)",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "diff.header",
+            "scope": "meta.diff, meta.diff.header",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "diff.deleted",
+            "scope": "markup.deleted",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "diff.inserted",
+            "scope": "markup.inserted",
+            "foreground": "var(lightgreen)"
+        },
+        {
+            "name": "diff.changed",
+            "scope": "markup.changed",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "CSS Properties",
+            "scope": "support.type.property-name",
+            "foreground": "var(white)"
+        },
+        {
+            "scope": "constant.numeric.line-number.find-in-files.match",
+            "foreground": "var(purple)"
+        },
+        {
+            "scope": "message.error",
+            "foreground": "var(red)"
+        },
+
+        {
+            "scope": "diff.deleted",
+            "background": "hsla(357, 45%, 60%, 0.15)",
+            "foreground_adjust": "l(+ 5%)"
+        },
+        {
+            "scope": "diff.deleted.char",
+            "background": "hsla(357, 60%, 60%, 0.30)",
+            "foreground_adjust": "l(+ 10%)"
+        },
+        {
+            "scope": "diff.inserted",
+            "background": "hsla(180, 45%, 60%, 0.15)",
+            "foreground_adjust": "l(+ 5%)"
+        },
+        {
+            "scope": "diff.inserted.char",
+            "background": "hsla(180, 60%, 60%, 0.30)",
+            "foreground_adjust": "l(+ 10%)"
+        },
+        {
+            "name": "Markdown link",
+            "scope": "markup.underline.link.markdown, markup.underline.link.image.markdown, meta.image.inline.markdown",
+            "foreground": "#c9a9f9",
+            "font_style": "italic"
+        }
+    ]
+}
