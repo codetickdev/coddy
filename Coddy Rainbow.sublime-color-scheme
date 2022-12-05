@@ -1,18 +1,18 @@
 {
-    "name": "Coddy - Rainbow",
+    "name": "Coddy Rainbow",
     "author": "CodeTick, Elva Hadi Prajatama",
     "variables":
     {
         "orange": "#FFA488",
-        "pink": "#FF85B8",
-        "blue": "#8AE1FA",
+        "pink": "#F979E6",
+        "blue": "#7CE2FC",
         "blue2": "#76d0ec",
-        "yellow": "#F3F99D",
-        "white": "#EEFFFF",
+        "yellow": "#F7FB7E",
+        "white": "#eeeeff",
         "gray": "#B7C5D370",
-        "lightgreen": "#98fb98",
-        "dark": "#242530",
-        "purple": "#c9a9f9",
+        "lightgreen": "#B9F75C",
+        "dark": "#1e1e1e",
+        "purple": "#C081FF",
     },
     "globals":
     {
@@ -48,7 +48,7 @@
         {
             "name": "Punctuation",
             "scope": "punctuation.definition - punctuation.definition.numeric.base",
-            "foreground": "var(blue2)"
+            "foreground": "var(white)"
         },
         {
             "name": "Foreground",
