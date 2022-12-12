@@ -1,18 +1,19 @@
 {
-    "name": "Coddy Rainbow",
+    "name": "Coddy Contrast",
     "author": "CodeTick, Elva Hadi Prajatama",
     "variables":
     {
-        "orange": "#FFB38A",
-        "pink": "#FF82A4",
-        "blue": "#71F4FF",
+        "lightgreen": "#00B38A",
+        "blue": "#A6E5FF",
+        "pink": "#EC556E",
+        "orange": "#FFA488",
         "blue2": "#76d0ec",
-        "yellow": "#F9F871",
+        "yellow": "#F7FB7E",
         "white": "#eeeeff",
         "gray": "#B7C5D370",
-        "lightgreen": "#9EDA64",
+        "gray2": "#CDCEDC",
         "dark": "#1e1e1e",
-        "purple": "#CE9DFF",
+        "purple": "#C081FF",
     },
     "globals":
     {
@@ -23,8 +24,8 @@
         "line_highlight": "var(gray)",
         "selection": "color(var(gray) alpha(0.2))",
         "selection_border": "color(var(gray) alpha(0.2))",
-        "inactive_selection": "color(var(yellow) alpha(0.2))",
-        "misspelling": "var(orange)",
+        "inactive_selection": "var(white)",
+        "misspelling": "var(pink)",
         "shadow": "color(var(dark) alpha(0.25))",
         "active_guide": "var(blue2)",
         "stack_guide": "color(var(blue) alpha(0.5))",
@@ -48,7 +49,7 @@
         {
             "name": "Punctuation",
             "scope": "punctuation.definition - punctuation.definition.numeric.base",
-            "foreground": "var(white)"
+            "foreground": "var(gray2)"
         },
         {
             "name": "Foreground",

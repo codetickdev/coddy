@@ -3,14 +3,14 @@
     "author": "CodeTick, Elva Hadi Prajatama",
     "variables":
     {
-        "orange": "#FFA488",
-        "pink": "#FF85B8",
-        "blue": "#94D0FF",
-        "blue2": "#89DDFF",
+        "lightgreen": "#6DFACD",
         "yellow": "#F3F99D",
-        "white": "#EEFFFF",
+        "blue": "#A6E5FF",
+        "white": "#F7F8FF",
+        "orange": "#FFB565",
+        "pink": "#FA74AC",
+        "blue2": "#89DDFF",
         "gray": "#B7C5D370",
-        "lightgreen": "#98fb98",
         "dark": "#242530",
     },
     "globals":
@@ -20,10 +20,10 @@
         "accent": "var(gray)",
         "caret": "var(gray)",
         "line_highlight": "var(gray)",
-        "selection": "var(gray)",
-        "selection_border": "var(gray)",
-        "inactive_selection": "var(white)",
-        "misspelling": "var(pink)",
+        "selection": "color(var(gray) alpha(0.2))",
+        "selection_border": "color(var(gray) alpha(0.2))",
+        "inactive_selection": "color(var(yellow) alpha(0.2))",
+        "misspelling": "var(orange)",
         "shadow": "color(var(dark) alpha(0.25))",
         "active_guide": "var(blue2)",
         "stack_guide": "color(var(blue) alpha(0.5))",
@@ -170,7 +170,7 @@
         {
             "name": "Function call",
             "scope": "variable.function, variable.annotation",
-            "foreground": "var(yellow)"
+            "foreground": "var(blue)"
         },
         {
             "name": "Library function",
