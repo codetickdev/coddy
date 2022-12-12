@@ -3,7 +3,8 @@
     "author": "CodeTick, Elva Hadi Prajatama",
     "variables":
     {
-        "lightgreen": "#6DFACD",
+        "lightgreen": "#94fc93",
+        "green": "#6DFACD",
         "yellow": "#F3F99D",
         "blue": "#A6E5FF",
         "white": "#F7F8FF",
