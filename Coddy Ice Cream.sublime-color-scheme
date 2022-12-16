@@ -6,7 +6,7 @@
     "author": "CodeTick, Elva Hadi Prajatama",
     "variables":
     {
-        "white": "#EDF7FA",
+        "white": "#eeeeee",
         "purple": "#9399FF",
         "pink": "#F07DEA",
         "blue": "#88E1F2",
@@ -45,12 +45,12 @@
     [
         {
             "name": "White",
-            "scope": "punctuation.separator, punctuation.terminator, separator, punctuation.separator.continuation, punctuation.accessor",
-            "foreground": "white"
+            "scope": "punctuation.separator, punctuation.terminator, punctuation.continuation, punctuation.accessor, punctuation.definition.keyword, punctuation.definition.annotation",
+            "foreground": "var(white)",
         },
         {
             "name": "Yellow",
-            "scope": "entity.name.class, entity.name.function, entity.name.function.constructor, entity.name.function.destructor, entity.name.namespace, entity.name.constant, entity.name.label, entity.name.section, entity.other.attribute-name, variable.parameter, variable.function",
+            "scope": "entity.name.class, entity.name.function, entity.name.function.constructor, entity.name.function.destructor, entity.name.constant, entity.name.label, entity.name.section, entity.name.trait, entity.other.attribute-name, variable.parameter, variable.function, meta.path",
             "foreground": "var(yellow)",
         },
         {
@@ -72,18 +72,18 @@
         // },
         {
             "name": "Pink",
-            "scope": "entity.name.enum, entity.name.union, entity.name.trait, entity.name.interface, entity.name.impl, entity.name.type, entity.name.tag, keyword.control.conditional, keyword.control.import, keyword, punctuation.definition.keyword, keyword.operator.arithmetic, keyword.operator.bitwise, keyword.operator.logical, keyword.operator.word, markup.heading, markup.other, markup.bold, markup.italic, markup.underline, meta.tag, meta.trait, meta.annotation, meta.annotation.identifier, meta.annotation.parameters, punctuation.definition.annotation, string.regexp, variable.language, punctuation.section.embedded",
+            "scope": "entity.name.enum, entity.name.union, entity.name.interface, entity.name.impl, entity.name.type, entity.name.tag, keyword.control.conditional, keyword.control.import, keyword, keyword.operator.arithmetic, keyword.operator.bitwise, keyword.operator.logical, keyword.operator.word, markup.heading, string.regexp, variable.language, punctuation.section.embedded",
             "foreground": "var(pink)",
         },
         {
             "name": "Pink Italic",
-            "scope": "storage.type, storage.modifier, keyword.declaration.class, keyword.declaration.function, keyword.declaration.struct, keyword.declaration.enum, keyword.declaration.union, keyword.declaration.trait, keyword.declaration.interface, keyword.declaration.impl, keyword.declaration.type, support.constant, support.function, support.type, support.module",
+            "scope": "storage.type, storage.modifier, keyword.declaration.class, keyword.declaration.function, keyword.declaration.struct, keyword.declaration.enum, keyword.declaration.union, keyword.declaration.trait, keyword.declaration.interface, keyword.declaration.impl, keyword.declaration.type, support.constant, support.type, support.module",
             "foreground": "var(pink)",
             "font_style": "italic"
         }, 
         {
             "name": "Blue",
-            "scope": "markup.underline.link, meta.interpolation, entity.other.inherited-class, variable.other.member, variable.other, variable.other.readwrite,  support.class",
+            "scope": "markup.underline.link, meta.interpolation, entity.other.inherited-class, entity.name.namespace, variable.other.member, variable.other.readwrite, support.class",
             "foreground": "var(blue)"
         },   
         // {
@@ -105,7 +105,7 @@
         // },  
         {
             "name": "Purple",
-            "scope": "keyword.control",
+            "scope": "keyword.control, support.function",
             "foreground": "var(purple)"
         },    
         // {
@@ -113,6 +113,27 @@
         //     "scope": "",
         //     "foreground": "var(purple)",
         //     "font_style": "italic"
-        // },    
+        // }, 
+
+        {
+            "scope": "diff.deleted",
+            "background": "hsla(357, 45%, 60%, 0.15)",
+            "foreground_adjust": "l(+ 5%)"
+        },
+        {
+            "scope": "diff.deleted.char",
+            "background": "hsla(357, 60%, 60%, 0.30)",
+            "foreground_adjust": "l(+ 10%)"
+        },
+        {
+            "scope": "diff.inserted",
+            "background": "hsla(180, 45%, 60%, 0.15)",
+            "foreground_adjust": "l(+ 5%)"
+        },
+        {
+            "scope": "diff.inserted.char",
+            "background": "hsla(180, 60%, 60%, 0.30)",
+            "foreground_adjust": "l(+ 10%)"
+        },   
     ]
 }
