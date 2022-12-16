@@ -3,16 +3,16 @@
     "author": "CodeTick, Elva Hadi Prajatama",
     "variables":
     {
+        "white": "#EDF7FA",
+        "purple": "#9399FF",
+        "pink": "#F07DEA",
+        "blue": "#88E1F2",
+        "yellow": "#F6EF98",
+        "lightgreen": "#6fc276",
+        "dark": "#181818",
         "orange": "#FFB38A",
-        "pink": "#FF82A4",
-        "blue": "#71F4FF",
         "blue2": "#76d0ec",
-        "yellow": "#F9F871",
-        "white": "#eeeeff",
         "gray": "#B7C5D370",
-        "lightgreen": "#94fc93",
-        "dark": "#1e1e1e",
-        "purple": "#CE9DFF",
     },
     "globals":
     {
@@ -76,21 +76,33 @@
             "foreground": "var(lightgreen)"
         },
         {
-            "name": "Operator, Misc",
-            "scope": "keyword.operator, keyword.control, entity.other.attribute-name, constant.other.color, constant.character",
+            "name": "Operator",
+            "scope": "keyword.operator",
+            "foreground": "var(pink)"
+        },
+        {
+            "name": "Misc",
+            "scope": "keyword.control, constant.other.color, constant.character",
             "foreground": "var(purple)",
             "font_style": "italic"
         },
         {
             "name": "Function, Special Method, Block Level",
-            "scope": "entity.name.function, support.function, keyword.other.special-method, entity.name.method, meta.accessor, meta.block-level, function.name",
+            "scope": "entity.name.function, support.function, keyword.other.special-method, entity.name.method, meta.accessor, meta.block-level",
             "foreground": "var(lightgreen)"
         },
         {
             "name": "Keyword, Storage",
-            "scope": "keyword, storage, storage.type, entity.name.tag.css, meta.tag, entity.name.tag",
-            "foreground": "var(pink)"
+            "scope": "keyword, storage, storage.type, entity.name.tag.css",
+            "foreground": "var(pink)",
+            "font_style": "italic"
         },
+        {
+            "name": "HTML Attribute",
+            "scope": "entity.other.attribute-name",
+            "foreground": "var(yellow)",
+            "font_style": "italic"
+        }, 
         {
             "name": "TypeScript Functions",
             "scope": "meta.expression.body.function",

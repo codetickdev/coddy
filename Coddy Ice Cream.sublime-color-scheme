@@ -1,0 +1,118 @@
+// This way might be not the best practise to creating a color scheme
+// I decided to take this way just to ease me and another user to swap the color 
+// to their preferences easily 
+{
+    "name": "Coddy Ice Cream",
+    "author": "CodeTick, Elva Hadi Prajatama",
+    "variables":
+    {
+        "white": "#EDF7FA",
+        "purple": "#9399FF",
+        "pink": "#F07DEA",
+        "blue": "#88E1F2",
+        "yellow": "#F6EF98",
+        "lightgreen": "#6fc276",
+        "dark": "#181818",
+        "orange": "#FFB38A",
+        "blue2": "#76d0ec",
+        "gray": "#B7C5D370",
+    },
+    "globals":
+    {
+        "foreground": "var(white)",
+        "background": "var(dark)",
+        "accent": "var(gray)",
+        "caret": "var(gray)",
+        "line_highlight": "var(gray)",
+        "selection": "color(var(gray) alpha(0.2))",
+        "selection_border": "color(var(gray) alpha(0.2))",
+        "inactive_selection": "color(var(yellow) alpha(0.2))",
+        "misspelling": "var(orange)",
+        "shadow": "color(var(dark) alpha(0.25))",
+        "active_guide": "var(blue2)",
+        "stack_guide": "color(var(blue) alpha(0.2))",
+        "highlight": "var(blue)",
+        "find_highlight_foreground": "var(dark)",
+        "find_highlight": "var(yellow)",
+        "brackets_options": "underline",
+        "brackets_foreground": "var(blue)",
+        "bracket_contents_options": "underline",
+        "bracket_contents_foreground": "var(blue)",
+        "tags_options": "stippled_underline",
+        "tags_foreground": "var(pink)"
+    },
+    "rules":
+    [
+        {
+            "name": "White",
+            "scope": "punctuation.separator, punctuation.terminator, separator, punctuation.separator.continuation, punctuation.accessor",
+            "foreground": "white"
+        },
+        {
+            "name": "Yellow",
+            "scope": "entity.name.class, entity.name.function, entity.name.function.constructor, entity.name.function.destructor, entity.name.namespace, entity.name.constant, entity.name.label, entity.name.section, entity.other.attribute-name, variable.parameter, variable.function",
+            "foreground": "var(yellow)",
+        },
+        {
+            "name": "Gray Italic",
+            "scope": "comment.line, comment.block, comment.block.documentation, punctuation.definition.comment, meta.toc.list",
+            "foreground": "color(var(gray) alpha(0.2)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Orange",
+            "scope": "constant.language, constant.numeric, constant.numeric.integer, constant.numeric.integer.binary, constant.numeric.integer.octal, constant.numeric.integer.decimal, constant.numeric.integer.hexadecimal, constant.numeric.integer.other, constant.numeric.float, constant.numeric.float.binary, constant.numeric.float.octal, constant.numeric.float.decimal, constant.numeric.float.hexadecimal, constant.numeric.float.other, constant.numeric.complex, constant.numeric.complex.real, constant.numeric.complex.imaginary, constant.character.escape, constant.other.placeholder, placeholder.escape, markup.deleted, invalid, invalid.deprecated, keyword.other.unit",
+            "foreground": "var(orange)",
+        },
+        // {
+        //     "name": "Orange Italic",
+        //     "scope": "",
+        //     "foreground": "var(orange)",
+        //     "font_style": "italic"
+        // },
+        {
+            "name": "Pink",
+            "scope": "entity.name.enum, entity.name.union, entity.name.trait, entity.name.interface, entity.name.impl, entity.name.type, entity.name.tag, keyword.control.conditional, keyword.control.import, keyword, punctuation.definition.keyword, keyword.operator.arithmetic, keyword.operator.bitwise, keyword.operator.logical, keyword.operator.word, markup.heading, markup.other, markup.bold, markup.italic, markup.underline, meta.tag, meta.trait, meta.annotation, meta.annotation.identifier, meta.annotation.parameters, punctuation.definition.annotation, string.regexp, variable.language, punctuation.section.embedded",
+            "foreground": "var(pink)",
+        },
+        {
+            "name": "Pink Italic",
+            "scope": "storage.type, storage.modifier, keyword.declaration.class, keyword.declaration.function, keyword.declaration.struct, keyword.declaration.enum, keyword.declaration.union, keyword.declaration.trait, keyword.declaration.interface, keyword.declaration.impl, keyword.declaration.type, support.constant, support.function, support.type, support.module",
+            "foreground": "var(pink)",
+            "font_style": "italic"
+        }, 
+        {
+            "name": "Blue",
+            "scope": "markup.underline.link, meta.interpolation, entity.other.inherited-class, variable.other.member, variable.other, variable.other.readwrite,  support.class",
+            "foreground": "var(blue)"
+        },   
+        // {
+        //     "name": "Blue Italic",
+        //     "scope": "",
+        //     "foreground": "var(blue)",
+        //     "font_style": "italic"
+        // },
+        {
+            "name": "Green",
+            "scope": "markup.inserted, string.quoted.single, string.quoted.double, string.quoted.triple, string.quoted.other, meta-block, markup.inserted",
+            "foreground": "var(lightgreen)"
+        },   
+        // {
+        //     "name": "Green Italic",
+        //     "scope": "",
+        //     "foreground": "var(lightgreen)",
+        //     "font_style": "italic"
+        // },  
+        {
+            "name": "Purple",
+            "scope": "keyword.control",
+            "foreground": "var(purple)"
+        },    
+        // {
+        //     "name": "Purple Italic",
+        //     "scope": "",
+        //     "foreground": "var(purple)",
+        //     "font_style": "italic"
+        // },    
+    ]
+}

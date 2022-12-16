@@ -10,6 +10,9 @@ Colorful Sublime Text color scheme and it's totally free
 ##### Contrast
 ![Contrast PHP](images/contrast-js.png)
 
+##### Ice Cream
+![Ice Cream](images/ice-cream-js.png)
+
 
 ### PHP
 ##### Rainbow
@@ -20,6 +23,9 @@ Colorful Sublime Text color scheme and it's totally free
 
 ##### Contrast
 ![Contrast PHP](images/contrast-php.png)
+
+##### Ice Cream
+![Ice Cream PHP](images/ice-cream-php.png)
 
 ## Installation
 #### Via Package Control
