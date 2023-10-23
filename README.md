@@ -32,4 +32,4 @@ Colorful Sublime Text color scheme and it's totally free
 This theme is available in Package Control, so I recommend you to install it through package manager by pressing `Cmd + Shift + P` type `Package Control: Install Package` and search for "Coddy Color Scheme".
 
 ## Love it?
-We are on the same vibe then! You can follow me on Twitter [@codetickdev](http://twitter.com/codetickdev) - let's connect.
+We are on the same vibe then! You can follow me on Twitter [@codacrafts](http://twitter.com/codacrafts) - let's connect.
